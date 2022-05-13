@@ -3,6 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 title: Home
-layout: default
+layout: page
 ---
 This is Matt Barnard's nascent github profile site
