@@ -1,0 +1,6 @@
+
+{% assign pages_by_sort = site.pages | sort: "sort_order" %}
+{% for page in pages_by_sort %}
+    <a href="{{page.url}}">{{page.title}}</a>
+
+    {% endfor %}
