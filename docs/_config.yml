@@ -31,7 +31,7 @@ twitter_username: mattbarnardsays
 github_username: mattbyname
 
 # Build settings
-theme: minima
+theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
 
