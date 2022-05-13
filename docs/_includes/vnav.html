@@ -1,0 +1,20 @@
+
+<!-- Configure sorting for pages  -->
+{% assign pages_by_sort = site.pages | sort: "sort_order"%}
+
+
+
+<h3>Navigation</h3>
+<nav>
+<!-- Main navigation -->
+    <ul>
+{% for page in pages_by_sort %}
+    {% if page.show-nav %}
+    <li><a href="{{page.url}}">{{page.title}}</a></li>
+    {% endif %}
+
+{% endfor %}
+<li><a href="https://github.com/MattByName/">GitHub</a></li>
+<li><a href="https://ko-fi.com/E1E1CFXTK">Ko-Fi</a></li>
+</ul>
+</nav>
