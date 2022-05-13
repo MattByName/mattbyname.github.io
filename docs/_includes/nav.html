@@ -1,6 +1,11 @@
 
+<!-- Configure sorting for pages  -->
 {% assign pages_by_sort = site.pages | sort: "sort_order" %}
+
+
+
+<!-- Main navigation -->
 {% for page in pages_by_sort %}
     <a href="{{page.url}}">{{page.title}}</a>
 
-    {% endfor %}
+{% endfor %}

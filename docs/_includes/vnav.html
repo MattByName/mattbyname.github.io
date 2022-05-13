@@ -1,0 +1,18 @@
+
+<!-- Configure sorting for pages  -->
+{% assign pages_by_sort = site.pages | sort: "sort_order"%}
+
+
+
+<h4>Navigation</h4>
+<nav>
+<!-- Main navigation -->
+    <ul>
+{% for page in pages_by_sort %}
+    {% if page.show-nav %}
+    <li><a href="{{page.url}}">{{page.title}}</a></li>
+    {% endif %}
+
+{% endfor %}
+    </ul>
+</nav>
