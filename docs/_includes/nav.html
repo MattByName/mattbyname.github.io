@@ -9,8 +9,7 @@
     |
 {% for page in pages_by_sort %}
     {% if page.show-nav %}
-    <a href="{{page.url}}">{{page.title}}</a>
-     |
+    <span class="nav-link"><a href="{{page.url}}">{{page.title}}</a> | </span>
     {% endif %}
 {% endfor %}
 <a href="https://github.com/MattByName/">GitHub</a>
