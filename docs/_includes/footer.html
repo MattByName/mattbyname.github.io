@@ -1,4 +1,5 @@
-<hr>
+{% if page.title != "Blog" %}
 {% include recent-posts.html %}
+{% endif %}
 <hr>
 {% include vnav.html %}
