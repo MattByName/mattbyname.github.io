@@ -9,11 +9,13 @@
     |
 {% for page in pages_by_sort %}
     {% if page.show-nav %}
-    <span class="nav-link"><a href="{{page.url}}">{{page.title}}</a> | </span>
-    {% endif %}
+<span class="nav-link"><a href="{{page.url}}">{{page.title}}</a> | </span>
+{% endif %}
 {% endfor %}
+<a rel="me" href="https://fosstodon.org/@mattbyname">Mastodon</a>
+ |
 <a href="https://github.com/MattByName/">GitHub</a>
-|
+ |
 <a href="https://ko-fi.com/E1E1CFXTK">Ko-Fi</a>
  |
     <hr>
